@@ -1,0 +1,65 @@
+*, 
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  padding: 20px;
+}
+
+.products-container {
+  padding: 10px;
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.product-item {
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.14);
+}
+
+.image-container {
+  outline: 1px solid rgb(230, 230, 230);
+}
+
+.product-description {
+  padding: 10px;
+}
+
+.price {
+  font-size: 1.75rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.category {
+  margin-block: 10px 20px;
+  text-transform: capitalize;
+  width: fit-content;
+  border-radius: 5px;
+  background: rgb(239, 239, 255);
+  padding: 0 10px;
+}
+
+.product-title {
+  font-size: 1rem;
+  font-weight: bold;
+  color: dodgerblue;
+}
+
+
+.image-container {
+  aspect-ratio: 1;
+  overflow: hidden;
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
